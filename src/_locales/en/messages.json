@@ -1,0 +1,26 @@
+{
+    "api_key": {
+        "message": "API Key"
+    },
+    "extension_description": {
+        "message": "Send SMS via sms77"
+    },
+    "from": {
+        "message": "From"
+    },
+    "message_display_action_default_title": {
+        "message": "Send SMS"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "send": {
+        "message": "Send"
+    },
+    "text": {
+        "message": "Text"
+    },
+    "to": {
+        "message": "To"
+    }
+}
