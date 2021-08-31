@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link href='styles.css' rel='stylesheet'>
+
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'/>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width' name='viewport'/>
+
+    <script src='shared.js'></script>
+    <script defer src='popup.js'></script>
+
+    <title data-i18n='extension_description'>Send SMS via sms77</title>
+</head>
+<body>
+
+<form>
+    <label data-i18n='from' for='from'>From</label>
+    <input id='from' maxlength='16'/>
+
+    <label data-i18n='to' for='to'>To</label>
+    <input id='to' required/>
+
+    <label data-i18n='text' for='text'>Text</label>
+    <textarea id='text' maxlength='10000' required></textarea>
+
+    <button data-i18n='send' type='submit'>Send</button>
+</form>
+
+</body>
+</html>

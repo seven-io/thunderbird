@@ -1,0 +1,33 @@
+{
+    "applications": {
+        "gecko": {
+            "id": "thunderbird@sms77.io",
+            "strict_min_version": "78.0"
+        }
+    },
+    "author": "sms77 e.K.",
+    "default_locale": "en",
+    "description": "__MSG_extension_description__",
+    "icons": {
+        "16": "img/16x16.png",
+        "32": "img/32x32.png",
+        "64": "img/64x64.png"
+    },
+    "manifest_version": 2,
+    "message_display_action": {
+        "default_popup": "popup.html",
+        "default_title": "__MSG_message_display_action_default_title__"
+    },
+    "name": "sms77",
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    },
+    "permissions": [
+        "https://gateway.sms77.io/api/*",
+        "messagesRead",
+        "notifications",
+        "storage"
+    ],
+    "version": "1"
+}
