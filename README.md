@@ -1,6 +1,6 @@
 ![](https://www.sms77.io/wp-content/uploads/2019/07/sms77-Logo-400x79.png "sms77 Logo")
 
-Send SMS from within Thunderbird.
+Send SMS or make text-to-speech calls from within Thunderbird.
 
 # Installation
 
@@ -12,7 +12,7 @@ Send SMS from within Thunderbird.
 * A dialog pops up asking for permissions which you have to accept by clicking `Add`
 * Navigate to preferences by clicking on the wrench and fill in the required API key.
 
-### Send SMS
+### Send SMS / Make text-to-speech calls
 
 Open an email and click on the button `Send SMS`. An interface pops up and the mail
 subject gets set as the default message text.

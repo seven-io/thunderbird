@@ -9,10 +9,10 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'sms77-thunderbird-latest.zip'
+          filename: 'sms77-thunderbird-latest.xpi'
           exclusions: '*.git* /*_screenshots/*'
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "sms77-thunderbird-latest.zip"
+          artifacts: "sms77-thunderbird-latest.xpi"
           token: ${{ secrets.GITHUB_TOKEN }}

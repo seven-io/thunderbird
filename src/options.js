@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function setOptions() {
     browser.storage.local.get().then(({apiKey, sms}) => {
         setInputValue('apiKey', apiKey || '')
         setInputValue('sms_from', sms.from || '')
+        setInputValue('voice_from', voice.from || '')
     }).catch(console.error)
 })
 
@@ -12,6 +13,9 @@ document.querySelector('form').addEventListener('submit', function saveOptions(e
         apiKey: getInputValue('apiKey'),
         sms: {
             from: getInputValue('sms_from'),
+        },
+        voice: {
+            from: getInputValue('voice_from'),
         },
     }
 

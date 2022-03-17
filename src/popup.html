@@ -15,6 +15,16 @@
 <body>
 
 <form>
+    <div>
+        <input checked type='radio' id='sms' name='msgType' value='sms'>
+        <label data-i18n='sms' for='sms'>SMS</label>
+    </div>
+
+    <div>
+        <input type='radio' id='voice' name='msgType' value='voice'>
+        <label data-i18n='voice' for='voice'>Voice</label>
+    </div>
+
     <label data-i18n='from' for='from'>From</label>
     <input id='from' maxlength='16'/>
 
