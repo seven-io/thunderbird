@@ -1,19 +1,30 @@
-function saveOptions(e) {
+document.addEventListener('DOMContentLoaded', function setOptions() {
+    browser.storage.local.get().then(({apiKey, sms}) => {
+        setInputValue('apiKey', apiKey || '')
+        setInputValue('sms_from', sms.from || '')
+    }).catch(console.error)
+})
+
+document.querySelector('form').addEventListener('submit', function saveOptions(e) {
     e.preventDefault()
 
     const options = {
-        apiKey: document.getElementById('apiKey').value
+        apiKey: getInputValue('apiKey'),
+        sms: {
+            from: getInputValue('sms_from'),
+        },
     }
 
     browser.storage.local.set(options)
+})
+
+function getInputValue(elementId) {
+    return document.getElementById(elementId).value
 }
 
-function setOptions() {
-    browser.storage.local.get('apiKey').then(({apiKey}) => {
-        document.getElementById('apiKey').value = apiKey || ''
-    }).catch(console.error)
+function setInputValue(elementId, value) {
+    const el = document.getElementById(elementId)
+    if (!el) return false
+    el.value = value
+    return true
 }
-
-document.addEventListener('DOMContentLoaded', setOptions)
-
-document.querySelector('form').addEventListener('submit', saveOptions)

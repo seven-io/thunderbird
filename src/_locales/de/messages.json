@@ -8,6 +8,9 @@
     "from": {
         "message": "Absenderkennung"
     },
+    "general": {
+        "message": "Allgemein"
+    },
     "message_display_action_default_title": {
         "message": "SMS versenden"
     },
@@ -16,6 +19,9 @@
     },
     "send": {
         "message": "Senden"
+    },
+    "sms": {
+        "message": "SMS"
     },
     "text": {
         "message": "Text"

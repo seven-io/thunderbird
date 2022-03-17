@@ -16,8 +16,19 @@
 
 <body>
 <form>
-    <label data-i18n='api_key' for='apiKey'>API Key</label>
-    <input id='apiKey' required type='text'/>
+    <fieldset>
+        <legend data-i18n='general'>General</legend>
+
+        <label data-i18n='api_key' for='apiKey'>API Key</label>
+        <input id='apiKey' required/>
+    </fieldset>
+
+    <fieldset>
+        <legend data-i18n='sms'>SMS</legend>
+
+        <label data-i18n='from' for='sms_from'>From</label>
+        <input id='sms_from' maxlength='16'/>
+    </fieldset>
 
     <button data-i18n='save' type='submit'>Save</button>
 </form>

@@ -8,6 +8,9 @@
     "from": {
         "message": "From"
     },
+    "general": {
+        "message": "General"
+    },
     "message_display_action_default_title": {
         "message": "Send SMS"
     },
@@ -16,6 +19,9 @@
     },
     "send": {
         "message": "Send"
+    },
+    "sms": {
+        "message": "SMS"
     },
     "text": {
         "message": "Text"
