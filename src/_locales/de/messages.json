@@ -1,0 +1,26 @@
+{
+    "api_key": {
+        "message": "API-Schlüssel"
+    },
+    "extension_description": {
+        "message": "SMS versenden via sms77"
+    },
+    "from": {
+        "message": "Absenderkennung"
+    },
+    "message_display_action_default_title": {
+        "message": "SMS versenden"
+    },
+    "save": {
+        "message": "Speichern"
+    },
+    "send": {
+        "message": "Senden"
+    },
+    "text": {
+        "message": "Text"
+    },
+    "to": {
+        "message": "Nachrichtenziel(e)"
+    }
+}
