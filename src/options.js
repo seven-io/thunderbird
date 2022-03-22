@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function setOptions() {
-    browser.storage.local.get().then(({apiKey, sms}) => {
+    browser.storage.local.get().then(({apiKey, sms, voice}) => {
         setInputValue('apiKey', apiKey || '')
         setInputValue('sms_from', sms.from || '')
         setInputValue('voice_from', voice.from || '')
