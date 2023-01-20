@@ -17,11 +17,10 @@ jobs:
         with:
           directory: 'src'
           filename: 'sms77-thunderbird-latest.xpi'
-          type: 'zip'
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'sms77-thunderbird-latest.xpi'
+          artifacts: 'src/sms77-thunderbird-latest.xpi'
           generateReleaseNotes: true
           tag: ${{ steps.bump-semver.outputs.new_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
