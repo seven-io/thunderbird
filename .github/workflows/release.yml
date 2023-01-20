@@ -5,6 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - uses: actions-ecosystem/action-get-latest-tag@v1
+        id: get-latest-tag
+      - uses: actions-ecosystem/action-bump-semver@v1
+        id: bump-semver
+        with:
+          current_version: ${{ steps.get-latest-tag.outputs.tag }}
+          level: minor
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
@@ -14,5 +21,7 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "sms77-thunderbird-latest.xpi"
+          artifacts: 'sms77-thunderbird-latest.xpi'
+          generateReleaseNotes: true
+          tag: ${{ steps.bump-semver.outputs.new_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
