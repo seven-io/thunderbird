@@ -1,7 +1,7 @@
 {
     "applications": {
         "gecko": {
-            "id": "thunderbird@sms77.io",
+            "id": "thunderbird@seven.io",
             "strict_min_version": "78.0"
         }
     },
@@ -23,13 +23,13 @@
         "default_popup": "popup.html",
         "default_title": "__MSG_message_display_action_default_title__"
     },
-    "name": "sms77",
+    "name": "seven",
     "options_ui": {
         "page": "options.html",
         "browser_style": true
     },
     "permissions": [
-        "https://gateway.sms77.io/api/*",
+        "https://gateway.seven.io/api/*",
         "messagesRead",
         "notifications",
         "storage"

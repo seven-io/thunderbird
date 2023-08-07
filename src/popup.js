@@ -46,7 +46,7 @@ async function request(endpoint, body = {}) {
         method: 'POST',
     }
 
-    const res = await fetch(`https://gateway.sms77.io/api/${endpoint}`, requestInit)
+    const res = await fetch(`https://gateway.seven.io/api/${endpoint}`, requestInit)
     const json = await res.json()
 
     await notify(json)
@@ -60,7 +60,7 @@ async function voice() {
     await request('voice')
 }
 
-async function notify(message, title = 'sms77') {
+async function notify(message, title = 'seven') {
     if (typeof message !== 'string') message = JSON.stringify(message)
 
     return browser.notifications.create({
